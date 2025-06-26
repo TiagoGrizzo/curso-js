@@ -29,7 +29,7 @@ const mediaInicial = { qtde: 0, total: 0, media: 0 }
 const media = carrinho
     .filter(fragil)
     .map(getTotal)
-    .reduce(getMedi, mediaInicial)
+    .reduce(getMedia, mediaInicial)
     .media
 
 console.log(`A média é ${media}!`)
